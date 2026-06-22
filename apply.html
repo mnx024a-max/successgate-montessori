@@ -143,7 +143,7 @@ margin-top:40px;
 
 <h3>Admission Application Form</h3>
 
-<form action="mailto:admissions.successgate@gmail.com" method="post" enctype="text/plain">
+<form action="https://formspree.io/f/mbdvjwjg" method="POST">
 
 <input type="text" name="Child Full Name" required>
 
@@ -157,20 +157,17 @@ margin-top:40px;
 <option>JHS</option>
 </select>
 
-<label>Parent/Guardian Name</label>
-<input type="text" required>
+<input type="text" name="parent_name" required>
 
-<label>Phone Number</label>
-<input type="tel" required>
+<input type="tel" name="phone_number" required>
 
-<label>Email Address</label>
-<input type="email">
+<input type="email" name="email_address">
 
 <label>Home Address</label>
-<textarea rows="3"></textarea>
+<textarea name="home_address" rows="3"></textarea>
 
 <label>Additional Information</label>
-<textarea rows="5"></textarea>
+<textarea name="additional_information" rows="5"></textarea>
 
 <button type="submit">
 Submit Application
