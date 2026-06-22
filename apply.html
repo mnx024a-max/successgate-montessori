@@ -145,11 +145,14 @@ margin-top:40px;
 
 <form action="https://formspree.io/f/mbdvjwjg" method="POST">
 
-<input type="text" name="Child Full Name" required>
+<label>Child's Full Name</label>
+<input type="text" name="child_name" required>
 
-<input type="date" name="Date of Birth" required>
+<label>Date of Birth</label>
+<input type="date" name="date_of_birth" required>
 
-<select name="Class Applying For" required>
+<label>Class Applying For</label>
+<select name="class_applying_for" required>
 <option>Creche</option>
 <option>Nursery</option>
 <option>Kindergarten</option>
@@ -157,10 +160,13 @@ margin-top:40px;
 <option>JHS</option>
 </select>
 
+<label>Parent/Guardian Name</label>
 <input type="text" name="parent_name" required>
 
+<label>Phone Number</label>
 <input type="tel" name="phone_number" required>
 
+<label>Email Address</label>
 <input type="email" name="email_address">
 
 <label>Home Address</label>
