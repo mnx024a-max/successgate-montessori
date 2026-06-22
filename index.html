@@ -211,7 +211,39 @@ font-size:2rem;
 }
 
 }
+.menu-toggle{
+display:none;
+font-size:30px;
+cursor:pointer;
+color:white;
+}
 
+@media(max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+nav{
+display:none;
+position:absolute;
+top:80px;
+right:10px;
+background:#002f6c;
+padding:15px;
+border-radius:8px;
+}
+
+nav ul{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+nav.show{
+display:block;
+}
+  }
 </style>
 
 </head>
@@ -228,7 +260,9 @@ font-size:2rem;
 </div>
 </div>
 
-<nav>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="navMenu">
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About</a></li>
@@ -459,5 +493,10 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 z-index:999;
 }
   </style>
+  <script>
+function toggleMenu() {
+document.getElementById("navMenu").classList.toggle("show");
+}
+  </script>
 </body>
   </html>
